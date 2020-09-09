@@ -41,7 +41,7 @@ a {
 
 button:hover {
     background-color: var(--link-color);
-   transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 button:active {
@@ -194,6 +194,13 @@ ul li:last-child {
     margin-bottom: 1rem;
 }
 
+
+.icons {
+    margin-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .icons li {
     margin-right: 5vw;
     margin: 1em;
@@ -234,11 +241,14 @@ button {
 .secondary-button {
     background: var(--color-7);
     color: var(--color-6);
+    border-style: solid;
+    border-width: thin;
+    border-color: var(--color-4);
 }
 
 .secondary-button:hover {
     background-color: var(--color-7);
-   transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 button:focus,
@@ -267,7 +277,7 @@ button:focus-within {
 p.typography-sample {
     font-family: var(--secondary-font);
     font-weight: 400;
-font-style: normal;
+    font-style: normal;
     line-height: 1.5;
     max-width: 960px;
 }
@@ -283,9 +293,8 @@ em {
 a {
     font-family: var(--primary-font);
     color: var(--link-color);
-    font-weight: bold;
     text-decoration: none;
-    transition: all 0.2s;
+    transition: width 2s, height 4s;
 }
 
 p[class*="font-details-"] {
