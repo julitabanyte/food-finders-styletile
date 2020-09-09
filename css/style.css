@@ -1,8 +1,8 @@
 /* change these */
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
+@import url("https://use.typekit.net/biu4aud.css");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://use.typekit.net/biu4aud.css");
 
 * {
     box-sizing: border-box;
@@ -14,14 +14,18 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-    --bg-color: red;
-    --link-color: green;
-    --link-hover-color: blue;
-    --color-4: hotpink;
-    --color-5: rebeccapurple;
+    --bg-color: #81B9DB;
+    --link-color: #84DAD1;
+    --link-hover-color: #FFE580;
+    --color-4: #7F7F7F;
+    --color-5: #F7F8F9;
+    --color-6: #000000;
+    --color-7: #FFFFFF;
 
-    --primary-font: "Open Sans", sans-serif;
-    --secondary-font: "Droid Serif", serif;
+    --primary-font: sofia-pro, sans-serif;
+    ;
+    --secondary-font: sofia-pro, sans-serif;
+    ;
     --main-text-color: #000;
 
     --white-space: 1rem;
@@ -36,8 +40,8 @@ a {
 }
 
 button:hover {
-    background-color: var(--link-hover-color);
-    transform: scale(3) rotate(40deg);
+    background-color: var(--link-color);
+   transform: scale(1.2);
 }
 
 button:active {
@@ -190,24 +194,51 @@ ul li:last-child {
     margin-bottom: 1rem;
 }
 
+.icons li {
+    margin-right: 5vw;
+    margin: 1em;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%
+}
+
+.icon-swatch-1 {
+    background: url(../img/001-facebook.png);
+}
+
+.icon-swatch-2 {
+    background: url(../img/002-twitter.png);
+}
+
+.icon-swatch-3 {
+    background: url(../img/011-instagram.png);
+}
+
 button {
     padding: 1rem;
-    border-radius: 4px;
+    border-radius: 2px;
     background: var(--link-color);
     text-align: center;
     text-decoration: none;
-    font: bold 1.25em/1 var(--primary-font);
-    letter-spacing: 1px;
+    font: normal 1.25em/1 var(--primary-font);
+    letter-spacing: 2px;
     color: white;
     text-transform: uppercase;
-    text-shadow: 0px -1px 0px #0374a0;
     transition: all 0.2s ease;
     cursor: pointer;
     margin: 0 1rem 1rem 0;
+    border: none;
+
 }
 
 .secondary-button {
-    background: var(--color-5);
+    background: var(--color-7);
+    color: var(--color-6);
+}
+
+.secondary-button:hover {
+    background-color: var(--color-7);
+   transform: scale(1.2);
 }
 
 button:focus,
@@ -223,17 +254,20 @@ button:focus-within {
 
 .h1-sample {
     font-size: 2.4rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .h2-sample {
     font-family: var(--secondary-font);
+    font-weight: 500;
     font-style: italic;
     font-size: 1.25rem;
 }
 
 p.typography-sample {
     font-family: var(--secondary-font);
+    font-weight: 400;
+font-style: normal;
     line-height: 1.5;
     max-width: 960px;
 }
