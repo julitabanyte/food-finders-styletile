@@ -204,22 +204,14 @@ ul li:last-child {
 .icons li {
     margin-right: 5vw;
     margin: 1em;
-    height: 10vw;
-    width: 10vw;
-    border-radius: 50%
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    margin-bottom: 5px
+
 }
 
-.icon-swatch-1 {
-    background: url(../img/001-facebook.png);
-}
 
-.icon-swatch-2 {
-    background: url(../img/002-twitter.png);
-}
-
-.icon-swatch-3 {
-    background: url(../img/011-instagram.png);
-}
 
 button {
     padding: 1rem;
